@@ -6,7 +6,7 @@
 var strStr = function(haystack, needle) {
     if (needle == "" ) {return 0};
     if(haystack == needle){return 0};
-    if(haystack.length != needle.length){return -1;}
+    if(needle.length > haystack.length){return -1;}
     let index = -1;
     let isPresent = false;
     let haystackArray = haystack.split('');
