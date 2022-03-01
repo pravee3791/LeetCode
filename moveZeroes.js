@@ -4,6 +4,18 @@
  */
 var moveZeroes = function(nums) {
     let j = 0;
+    // let numsZero = []
+    // for (const i of nums) {
+    //    if (i !=0) {
+    //       numsZero.push(i) 
+    //    }
+    // }
+    // for (let i = 0; i < nums.length; i++) {
+    //     if(i < numsZero.length){
+    //         nums[i] = numsZero[i]
+    //     }
+    //     else { nums[i]= 0}
+    // }
     for (let i = 0; i < nums.length; i++) {
         if(nums[i] !=0){
             const temp = nums[j];

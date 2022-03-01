@@ -45,16 +45,19 @@ var removeDuplicates = function(nums) {
             nums[i] ="_"
         }
     }
-    for (let i = 0; i < nums.length; i++) {
-        if(nums[i] != '_'){
-            const temp = nums[j]
-            nums[j] = nums[i];
-            nums[i] = temp;
-            j++;
-        }
+    let j = 0;
+    console.log(nums);
+    for (let k = 0; k < nums.length; k++) {
+       if (nums[k] != '') {
+          const temp = nums[j];
+          nums[j] = nums[k];
+          nums[k] = temp; 
+          j++;
+       } 
     }
-    return count;
-}
+
+    return nums;
+};
 const nums = [0,0,1,1,1,2,2,3,3,4]
 // const nums = [1]
 console.log(removeDuplicates(nums))
